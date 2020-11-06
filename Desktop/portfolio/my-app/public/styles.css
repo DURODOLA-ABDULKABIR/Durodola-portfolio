@@ -344,9 +344,9 @@ hr.line{
     font-size: 1.2em;
 }
 
-.projects{
+/* .projects{
     margin: 25px 170px;
-}
+} */
 
 .projects img{
     width: 250px;
@@ -355,8 +355,14 @@ hr.line{
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-.projects, .skills ul{
+.fashion, .weather,
+ .newsletter, .projects,
+  .skills ul{
     display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
@@ -365,6 +371,8 @@ hr.line{
 .projects a{
     text-decoration: none;
     color: black;
+    text-align: center;
+    margin: auto;
 }
 
 .projects img:hover{
@@ -373,7 +381,10 @@ hr.line{
 }
 
 .projects-container{
-    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto auto 50px;
 }
 
 footer{
@@ -405,23 +416,17 @@ footer h4{
         font-size: 25px;
         text-align: center;
     }
-    .services, .role, .getInTouch, .skills{
+    .services, .role, .getInTouch{
         width: 600px;
-    }
-    .skills{
-        width: 630px;
-    }
-    .skills{
-        margin: auto;
     }
     .skills li{
         padding: 12px;
     }
-    .projects{
-        margin: 20px;
+    .fashion, .weather, .newsletter{
+        padding: 20px
     }
-    .projects img{
-        width: 210px;
+    .projects-container{
+        margin-top: 50px;
     }
 }
 
@@ -433,10 +438,17 @@ footer h4{
     .introduction{
         font-size: 23px;
     }
+    .skills{
+        margin: 15px;
+    }
+
+    .introImage{
+        width: 250px;
+    }
 }
 
 
-@media (max-width: 420px){
+@media (max-width: 542px){
 body{
     font-size: 20px;
 }
@@ -534,45 +546,43 @@ body{
     text-align: center;
     padding: 0px;
 }
-
 .contactItems li{
     padding: 0;
 }
-
 .skills{
     margin: 50px 25px;
 }
-
 .mySkills li{
-    padding: px;
+    padding: 21px;
 }
-
 .icon{
     display: block;
     font-size: 25px;
 }
-
-.projects{
-    margin-left: 15%;
-}
-
 .toolbarLogo{
     position: absolute;
     margin-left: 64%;
 }
+}
 
+@media(max-width: 540px){
+    .mySkills ul{
+        text-align: left;
+        display: block;
+    }
 }
 
 @media (max-width: 320px){
     .mySkills li{
         padding: 18px;
     }
-    .projects{
-        margin-left: 9.5%;
-    }    
     .getInTouch{
         width: 230px;
     }
+}
+
+@media(max-width:280px){
+    
 }
 
 
