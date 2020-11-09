@@ -9,10 +9,24 @@ html,body{
 body{
     height: 100%;
     width: 100%;
-    font-size: 23px;
-    font-family: sans-serif;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+}
+h2{
+    font-size: 1.5em;
+    margin: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+h5{
+    font-size: 1em;
+    margin: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
+h6{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 0.9em;
+}
 .toolbar{
     display: flex;
     background: rgb(102, 192, 219);
@@ -69,7 +83,7 @@ body{
 }
 
 .spacer{
-    flex: 0.45;
+    flex: 0.47;
 }
 
 .toggle-button{
@@ -77,6 +91,7 @@ body{
     color: white;
     font-size: 30px;
     padding-right: 4px;
+    margin-left: -18px;
 }
 
 .toggle-button:hover{
@@ -96,7 +111,7 @@ body{
     height: 100%;
     position: fixed;
     background: whitesmoke;
-    top: 60px;
+    top: 55px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     width: 40%;
     max-width: 200px;
@@ -145,7 +160,6 @@ svg {
     margin-top: 60px;
     color: #fff;
     background: rgb(102, 192, 219);
-    /* font-size: 20px; */
 }
 
 .name, .introImage{
@@ -172,15 +186,9 @@ svg {
     justify-content: center;
     position: absolute;
     color: white;
-    /* top: 500px; */
+    margin-top: 70px;
     left: 12%;
     text-align: center;
-}
-
-
-h2{
-    font-size: 1.5em;
-    line-height: 0;
 }
 
 .content{
@@ -208,7 +216,7 @@ h2{
     width: 500px;
     padding: 20px 70px 20px;
     background: whitesmoke;
-    text-align: justify;
+    text-align: left;
     border-radius: 5px 20px;
 } 
 
@@ -252,7 +260,7 @@ h2{
     width: 400px;
     padding: 20px 50px;
     background: whitesmoke;
-    text-align: justify;
+    text-align: left;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     border-radius: 5px 20px;
     margin: 50px;
@@ -304,6 +312,10 @@ hr.line{
     list-style: none;
 }
 
+.role img:hover{
+    width: 120px;
+}
+
 .skills{
     background-color: whitesmoke;
     border-radius: 5px 20px;
@@ -344,12 +356,8 @@ hr.line{
     font-size: 1.2em;
 }
 
-/* .projects{
-    margin: 25px 170px;
-} */
-
 .projects img{
-    width: 250px;
+    width: 220px;
     height: 200px;
     border-radius: 8px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -368,6 +376,11 @@ hr.line{
     list-style: none;
 }
 
+.fashion, .weather,
+ .newsletter{
+    margin: 0 150px;
+ }
+
 .projects a{
     text-decoration: none;
     color: black;
@@ -376,8 +389,8 @@ hr.line{
 }
 
 .projects img:hover{
-    width: 280px;
-    height: 230px;
+    width: 240px;
+    height: 220px;
 }
 
 .projects-container{
@@ -405,16 +418,19 @@ footer h4{
         padding: 20px 60px;
         font-size: 25px;
     }
+    .name h6{
+        font-size: 16px;
+    }
     .introImage{
         width: 350px;
         height: 250px;
     }
     .greeting{
         position: absolute;
-        margin-left: -140px;
-        margin-top: -30px;
-        font-size: 25px;
+        font-size: 27px;
         text-align: center;
+        margin-top: 40px;
+        margin-left: -160px;
     }
     .services, .role, .getInTouch{
         width: 600px;
@@ -423,7 +439,8 @@ footer h4{
         padding: 12px;
     }
     .fashion, .weather, .newsletter{
-        padding: 20px
+        padding: 20px;
+        margin: auto;
     }
     .projects-container{
         margin-top: 50px;
@@ -444,6 +461,10 @@ footer h4{
 
     .introImage{
         width: 250px;
+    }
+    .greeting{
+        font-size: 21px;
+        margin-left: -150px;
     }
 }
 
@@ -472,6 +493,10 @@ body{
 .toolbarItems{
     display: none;
 }
+.side-drawer ul{
+    font-size: 16px;
+    margin-left: -10px;
+}
 .name h2, .greeting h3{
     font-size: 23px;
 }
@@ -484,8 +509,9 @@ body{
 }
 
 .greeting{
+    position: absolute;
     top: 30px;
-    left: -9px;
+    left: 170px;
 }
 
 .aboutMe{
@@ -570,6 +596,14 @@ body{
         text-align: left;
         display: block;
     }
+    .skills{
+        margin: auto;
+        width: 300px;
+    }
+    .greeting{
+        width: 300px;
+        margin-top: 60px;
+    }
 }
 
 @media (max-width: 320px){
@@ -582,7 +616,32 @@ body{
 }
 
 @media(max-width:280px){
-    
+    body{
+        font-size: 16px;
+    }
+    .skills{
+        width: 240px;
+    }
+    .about img{
+        width: 200px;
+        padding-bottom: 0;
+    }
+    .fashion, .weather, .newsletter{
+        margin-left: -11px;
+    }
+    .side-drawer ul{
+        font-size: 16px;
+        margin-left: -20px;
+    }
+    .greeting{
+        width: 250px;
+    }
+    .greeting h3{
+        line-height: 0;
+    }
+    .name h2{
+        font-size: 19px;
+    }
 }
 
 
@@ -590,15 +649,15 @@ body{
     .toggle-button, .side-drawer{
         display: none;
     }
-
     .backdrop{
         display: none;
     }
-
     .greeting{
         left: 20%;
         top: 140px;
         width: 20em;
     }
-
+    .emoji{
+        display: none;
+    }
 }

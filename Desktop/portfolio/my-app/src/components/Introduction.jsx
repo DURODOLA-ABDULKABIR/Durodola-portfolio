@@ -9,9 +9,9 @@ function Introduction(){
     config={{delay:5000, duration:1000}}
     >
    {props => <div className="name" style={props}>
-            <p> I am</p>
+            <h6> I am</h6>
             <h2>Durodola Abdulkabir</h2>
-            <p>Front End Web Developer</p></div>}
+            <h6>Front End Web Developer <span area-hidden="true" className="emoji" role="img">👨‍💻</span></h6></div>}
   </Spring>)
 };
 
