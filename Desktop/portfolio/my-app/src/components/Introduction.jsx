@@ -11,7 +11,7 @@ function Introduction(){
    {props => <div className="name" style={props}>
             <h6> I am</h6>
             <h2>Durodola Abdulkabir</h2>
-            <h6>Front End Web Developer <span area-hidden="true" className="emoji" role="img">👨‍💻</span></h6></div>}
+            <h6>Front End Web Developer <span area-hidden="true" className="emoji" role="img" aria-label="pointer">👨‍💻</span></h6></div>}
   </Spring>)
 };
 

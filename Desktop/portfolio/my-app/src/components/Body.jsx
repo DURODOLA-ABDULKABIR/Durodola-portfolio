@@ -1,5 +1,5 @@
 import React from "react"
-import HeadingIcons from "./HeadingIcons";
+import BodyIcons from "./BodyIcons";
 import About from "./About";
 import Services from "./Services";
 import Role from "./Role";
@@ -15,7 +15,7 @@ function Body() {
         </div>
         <div className="getInTouch">
             <h2>Get In Touch</h2>
-                <HeadingIcons />
+                <BodyIcons />
         </div>
         <Skills />
         <Projects />

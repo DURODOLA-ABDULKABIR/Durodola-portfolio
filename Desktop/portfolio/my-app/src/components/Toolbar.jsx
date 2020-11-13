@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineBars } from 'react-icons/ai';
 import Navigation from "./Navigation";
-import Icons from "./Icons";
+import ToolbarIcons from "./ToolbarIcons";
 
 
 function Toolbar(props) {
@@ -15,7 +15,7 @@ function Toolbar(props) {
                         <Navigation />
                         <div className="spacer" /> 
                         <div className="toolbarItems"> 
-                            <Icons />
+                            <ToolbarIcons />
                         </div>
                 </nav>
             </div>

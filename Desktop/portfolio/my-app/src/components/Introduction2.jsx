@@ -9,7 +9,7 @@ function Introduction2(){
     config={{duration:5000}}
     >
    {props => <div className="greeting" style={props}>
-     <h5>Hi there 🙋‍♂️</h5>
+     <h5>Hi there <span role="img" aria-label="pointer">🙋‍♂️</span></h5>
      <p>I design and develop experiences that make people's lives easy</p>
    </div>}
   </Spring>)
